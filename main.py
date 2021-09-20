@@ -13,14 +13,6 @@ def speak(audio):
     engine.say(audio)
     engine.runAndWait()
 
-def wikipedia(arg):
-    speak('Searching Wikipedia...')
-    query = query.replace("wikipedia", "")
-    results = wikipedia.summary(query, sentences=2)
-    speak("According to Wikipedia")
-    print(results)
-    speak(results)
-
 while True:
     user_inp = input("> ")
 
@@ -43,6 +35,3 @@ while True:
         
     else:
         break    
-
-
-

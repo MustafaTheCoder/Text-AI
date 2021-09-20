@@ -26,20 +26,25 @@ while True:
 
     if user_inp == "open code".lower():
         speak("Opening Code...")
+        print("Opening Code...")
         code_path = "C://Users//MUHAMMAD DANISH//AppData//Local//Programs//Microsoft VS Code//Code.exe"
         os.startfile(code_path)
+
     elif user_inp == "open google".lower():
         speak("Opening Google...")
+        print("Opening Google...")
         google_path = "C://Program Files (x86)//Google//Chrome//Application//chrome.exe"
         os.startfile(google_path)
+
+    elif user_inp == "open youtube".lower():
+        speak("Opening Youtube...")
+        print("Opening Youtube...")
+        #implementation
 
     elif user_inp == "the time":
         strTime = datetime.datetime.now().strftime("%H:%M:%S")    
         speak(f"Sir, the time is {strTime}")
 
-    search = ""
-    elif user_inp == f"wikipedia {search}":
-        wikipedia(search)
         
     else:
         break    

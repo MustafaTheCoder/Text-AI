@@ -28,10 +28,10 @@ while True:
         google_path = "Path"
         os.startfile(google_path)
 
-    elif user_inp == "the time":
+    elif user_inp == "time".lower():
         strTime = datetime.datetime.now().strftime("%H:%M:%S")    
-        speak(f"Sir, the time is {strTime}")
-
+        speak(f"The time is {strTime}")
+        print(f"Time: {strTime}")
         
     else:
         break    
